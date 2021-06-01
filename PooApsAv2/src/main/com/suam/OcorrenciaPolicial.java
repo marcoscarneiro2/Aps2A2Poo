@@ -7,6 +7,12 @@ abstract class OcorrenciaPolicial {
 	private String nomeVitima;
 
 	private String descricaoOcorrencia;
+	
+	public OcorrenciaPolicial(int numero,String nomeVitima, String descricaoOcorrencia) {
+		this.numero = numero;
+		this.nomeVitima = nomeVitima;
+		this.descricaoOcorrencia = descricaoOcorrencia;
+	}
 
 	public int getNumero() {
 		return 0;
@@ -32,8 +38,6 @@ abstract class OcorrenciaPolicial {
 
 	}
 
-	public String exibeInfoOcorrencia() {
-		return null;
-	}
+	public abstract String exibeInfoOcorrencia();
 
 }

@@ -2,6 +2,10 @@ package main.com.suam;
 
 public class OcorrenciaLatrocinio extends OcorrenciaPolicial implements Morte, Roubo {
 
+	public OcorrenciaLatrocinio(int numero, String nomeVitima, String descricaoOcorrencia) {
+		super(numero, nomeVitima, descricaoOcorrencia);
+	}
+
 	private int valorRoubado;
 
 	public int getValorRoubado() {
@@ -30,6 +34,12 @@ public class OcorrenciaLatrocinio extends OcorrenciaPolicial implements Morte, R
 
 	@Override
 	public Void informaLocalAssassinato(String localAssassinato) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String exibeInfoOcorrencia() {
 		// TODO Auto-generated method stub
 		return null;
 	}

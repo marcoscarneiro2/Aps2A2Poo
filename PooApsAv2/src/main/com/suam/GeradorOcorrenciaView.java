@@ -15,6 +15,8 @@ import javax.swing.JTextPane;
 import javax.swing.JButton;
 import java.awt.Toolkit;
 import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class GeradorOcorrenciaView extends JFrame {
 
@@ -143,6 +145,11 @@ public class GeradorOcorrenciaView extends JFrame {
 		panel.add(lblNewLabel_5);
 		
 		JButton btnNewButton = new JButton("Salvar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btnNewButton.setForeground(new Color(255, 255, 255));
 		btnNewButton.setBackground(new Color(0, 128, 0));
 		btnNewButton.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 11));
