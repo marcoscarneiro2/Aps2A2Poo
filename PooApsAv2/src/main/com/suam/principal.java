@@ -14,6 +14,7 @@ import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import javax.swing.JButton;
 import java.awt.Toolkit;
+import javax.swing.ImageIcon;
 
 public class principal extends JFrame {
 
@@ -52,7 +53,7 @@ public class principal extends JFrame {
 	 * Create the frame.
 	 */
 	public principal() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("\\poli.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("img\\poli.png"));
 		setForeground(new Color(0, 0, 0));
 		setBackground(Color.BLACK);
 		setFont(new Font("Dialog", Font.BOLD, 12));
@@ -70,7 +71,7 @@ public class principal extends JFrame {
 		contentPane.add(tabbedPane);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(new Color(112, 128, 144));
+		panel.setBackground(Color.BLACK);
 		tabbedPane.addTab("Latroc\u00EDnio", null, panel, null);
 		panel.setLayout(null);
 		
@@ -105,31 +106,38 @@ public class principal extends JFrame {
 		panel.add(textPane);
 		
 		JLabel lblNewLabel = new JLabel("Cadastro de Latroc\u00EDnio");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Caviar Dreams", Font.BOLD, 14));
 		lblNewLabel.setBounds(128, 11, 166, 18);
 		panel.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("N\u00FAmero da ocorrencia");
+		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_1.setBounds(10, 49, 139, 23);
 		panel.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Valor roubado");
+		lblNewLabel_2.setForeground(Color.WHITE);
 		lblNewLabel_2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_2.setBounds(10, 101, 96, 30);
 		panel.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("Nome da V\u00EDtima");
+		lblNewLabel_3.setForeground(Color.WHITE);
 		lblNewLabel_3.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_3.setBounds(184, 49, 110, 23);
 		panel.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Endere\u00E7o do Assassinato");
+		lblNewLabel_4.setBackground(Color.WHITE);
+		lblNewLabel_4.setForeground(Color.WHITE);
 		lblNewLabel_4.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_4.setBounds(184, 101, 161, 30);
 		panel.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("Observa\u00E7\u00E3o");
+		lblNewLabel_5.setForeground(Color.WHITE);
 		lblNewLabel_5.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_5.setBounds(10, 153, 96, 30);
 		panel.add(lblNewLabel_5);
@@ -148,9 +156,14 @@ public class principal extends JFrame {
 		btnNewButton_1.setBounds(225, 294, 110, 23);
 		panel.add(btnNewButton_1);
 		
+		JLabel lblNewLabel_6 = new JLabel("");
+		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\usuario\\eclipse-workspace\\PooApsAv2\\img\\fundo.png"));
+		lblNewLabel_6.setBounds(0, 0, 429, 328);
+		panel.add(lblNewLabel_6);
+		
 		JPanel panel_1 = new JPanel();
 		panel_1.setLayout(null);
-		panel_1.setBackground(new Color(112, 128, 144));
+		panel_1.setBackground(Color.BLACK);
 		tabbedPane.addTab("Furto", null, panel_1, null);
 		
 		textField_4 = new JTextField();
@@ -179,26 +192,31 @@ public class principal extends JFrame {
 		panel_1.add(textPane_1);
 		
 		JLabel lblCadastroDeFurto = new JLabel("Cadastro de Furto");
+		lblCadastroDeFurto.setForeground(Color.WHITE);
 		lblCadastroDeFurto.setFont(new Font("Caviar Dreams", Font.BOLD, 14));
 		lblCadastroDeFurto.setBounds(128, 11, 166, 18);
 		panel_1.add(lblCadastroDeFurto);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("N\u00FAmero da ocorrencia");
+		lblNewLabel_1_1.setForeground(Color.WHITE);
 		lblNewLabel_1_1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_1_1.setBounds(10, 49, 139, 23);
 		panel_1.add(lblNewLabel_1_1);
 		
 		JLabel lblNewLabel_2_1 = new JLabel("Valor roubado");
+		lblNewLabel_2_1.setForeground(Color.WHITE);
 		lblNewLabel_2_1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_2_1.setBounds(184, 45, 96, 30);
 		panel_1.add(lblNewLabel_2_1);
 		
 		JLabel lblNewLabel_3_1 = new JLabel("Nome da V\u00EDtima");
+		lblNewLabel_3_1.setForeground(Color.WHITE);
 		lblNewLabel_3_1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_3_1.setBounds(10, 106, 110, 23);
 		panel_1.add(lblNewLabel_3_1);
 		
 		JLabel lblNewLabel_5_1 = new JLabel("Observa\u00E7\u00E3o");
+		lblNewLabel_5_1.setForeground(Color.WHITE);
 		lblNewLabel_5_1.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_5_1.setBounds(10, 153, 96, 30);
 		panel_1.add(lblNewLabel_5_1);
@@ -217,9 +235,14 @@ public class principal extends JFrame {
 		btnNewButton_1_1.setBounds(225, 294, 110, 23);
 		panel_1.add(btnNewButton_1_1);
 		
+		JLabel lblNewLabel_7 = new JLabel("New label");
+		lblNewLabel_7.setIcon(new ImageIcon("C:\\Users\\usuario\\eclipse-workspace\\PooApsAv2\\img\\fundo.png"));
+		lblNewLabel_7.setBounds(0, 0, 429, 328);
+		panel_1.add(lblNewLabel_7);
+		
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
-		panel_2.setBackground(new Color(112, 128, 144));
+		panel_2.setBackground(Color.BLACK);
 		tabbedPane.addTab("Homic\u00EDdio", null, panel_2, null);
 		
 		textField_10 = new JTextField();
@@ -248,26 +271,31 @@ public class principal extends JFrame {
 		panel_2.add(textPane_2);
 		
 		JLabel lblCadastroDeHomicdio = new JLabel("Cadastro de Homic\u00EDdio");
+		lblCadastroDeHomicdio.setForeground(Color.WHITE);
 		lblCadastroDeHomicdio.setFont(new Font("Caviar Dreams", Font.BOLD, 14));
 		lblCadastroDeHomicdio.setBounds(128, 11, 166, 18);
 		panel_2.add(lblCadastroDeHomicdio);
 		
 		JLabel lblNewLabel_1_2 = new JLabel("N\u00FAmero da ocorrencia");
+		lblNewLabel_1_2.setForeground(Color.WHITE);
 		lblNewLabel_1_2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_1_2.setBounds(10, 49, 139, 23);
 		panel_2.add(lblNewLabel_1_2);
 		
 		JLabel lblNewLabel_3_2 = new JLabel("Nome da V\u00EDtima");
+		lblNewLabel_3_2.setForeground(Color.WHITE);
 		lblNewLabel_3_2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_3_2.setBounds(184, 49, 110, 23);
 		panel_2.add(lblNewLabel_3_2);
 		
 		JLabel lblNewLabel_4_2 = new JLabel("Endere\u00E7o do Assassinato");
+		lblNewLabel_4_2.setForeground(Color.WHITE);
 		lblNewLabel_4_2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_4_2.setBounds(10, 98, 161, 30);
 		panel_2.add(lblNewLabel_4_2);
 		
 		JLabel lblNewLabel_5_2 = new JLabel("Observa\u00E7\u00E3o");
+		lblNewLabel_5_2.setForeground(Color.WHITE);
 		lblNewLabel_5_2.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 10));
 		lblNewLabel_5_2.setBounds(10, 153, 96, 30);
 		panel_2.add(lblNewLabel_5_2);
@@ -285,5 +313,10 @@ public class principal extends JFrame {
 		btnNewButton_1_2.setBackground(new Color(128, 0, 0));
 		btnNewButton_1_2.setBounds(225, 294, 110, 23);
 		panel_2.add(btnNewButton_1_2);
+		
+		JLabel lblNewLabel_8 = new JLabel("New label");
+		lblNewLabel_8.setIcon(new ImageIcon("C:\\Users\\usuario\\eclipse-workspace\\PooApsAv2\\img\\fundo.png"));
+		lblNewLabel_8.setBounds(0, 0, 429, 328);
+		panel_2.add(lblNewLabel_8);
 	}
 }
