@@ -2,11 +2,11 @@ package main.com.suam;
 
 public class OcorrenciaHomicidio extends OcorrenciaPolicial implements Morte {
 
-	public OcorrenciaHomicidio(int numero, String nomeVitima, String descricaoOcorrencia) {
-		super(numero, nomeVitima, descricaoOcorrencia);
-	}
-
 	private String localAssassinato;
+	
+	//public OcorrenciaHomicidio(int numero, String nomeVitima, String descricaoOcorrencia) {
+	//	super(numero, nomeVitima, descricaoOcorrencia);
+	//}
 
 	public String getLocalAssassinato() {
 		return localAssassinato;

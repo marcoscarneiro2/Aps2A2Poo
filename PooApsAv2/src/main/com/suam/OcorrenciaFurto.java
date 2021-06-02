@@ -4,9 +4,9 @@ public class OcorrenciaFurto extends OcorrenciaPolicial implements Roubo {
 
 	private int valorRoubado;
 	
-	public OcorrenciaFurto(int numero, String nomeVitima, String descricaoOcorrencia) {
-		super(numero, nomeVitima, descricaoOcorrencia);
-	}
+	//public OcorrenciaFurto(int numero, String nomeVitima, String descricaoOcorrencia) {
+	//	super(numero, nomeVitima, descricaoOcorrencia);
+	//}
 
 
 	public int getValorRoubado() {

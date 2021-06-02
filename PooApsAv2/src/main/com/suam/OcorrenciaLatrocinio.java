@@ -2,12 +2,16 @@ package main.com.suam;
 
 public class OcorrenciaLatrocinio extends OcorrenciaPolicial implements Morte, Roubo {
 
-	public OcorrenciaLatrocinio(int numero, String nomeVitima, String descricaoOcorrencia) {
-		super(numero, nomeVitima, descricaoOcorrencia);
-	}
-
 	private int valorRoubado;
-
+	
+	private String localAssassinato;
+	
+	//int numero, String nomeVitima, String descricaoOcorrencia
+	//OcorrenciaLatrocinio() {
+		//super("OcorrenciaPolicial");
+	//}
+	
+	
 	public int getValorRoubado() {
 		return valorRoubado;
 	}
@@ -24,7 +28,7 @@ public class OcorrenciaLatrocinio extends OcorrenciaPolicial implements Morte, R
 		this.localAssassinato = localAssassinato;
 	}
 
-	private String localAssassinato;
+	
 
 	@Override
 	public Void informaValorRoubado(int valorRoubado) {
